@@ -4,30 +4,30 @@ export default function TeamPage() {
         <main className="min-h-screen bg-[#020617] text-[#f8fafc] overflow-x-hidden selection:bg-[#d4af37] selection:text-[#020617] font-sans">
 
             {/* Hero Section */}
-            <section className="relative pt-48 pb-32 flex items-center justify-center overflow-hidden border-b border-[#d4af37]/10">
+            <section className="relative pt-32 pb-20 md:pt-48 md:pb-32 flex items-center justify-center overflow-hidden border-b border-[#d4af37]/10">
                 <div className="absolute inset-0 z-0">
                     <div className="absolute inset-0 bg-[#0f172a] opacity-50" />
                     <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-[#d4af37]/10 to-transparent blur-3xl" />
                 </div>
 
-                <div className="container mx-auto px-8 relative z-10 text-center">
+                <div className="container mx-auto px-6 md:px-8 relative z-10 text-center">
                     <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-[#d4af37]/10 border border-[#d4af37]/20 rounded-full mb-8">
                         <span className="w-2 h-2 rounded-full bg-[#d4af37] animate-pulse" />
                         <span className="text-[10px] font-black text-[#d4af37] tracking-[0.3em] uppercase">WHO : LEADERSHIP</span>
                     </div>
-                    <h1 className="text-5xl md:text-8xl font-black font-serif mb-6 italic leading-tight uppercase text-white/90">
+                    <h1 className="text-4xl md:text-8xl font-black font-serif mb-6 italic leading-tight uppercase text-white/90">
                         Global Experts
                     </h1>
                     <h2 className="text-xl md:text-2xl font-bold font-sans text-[#d4af37] tracking-widest uppercase mb-12">
                         실물 자산과 기술의 완벽한 결합
                     </h2>
-                    <p className="text-xl md:text-2xl font-sans font-light text-white/50 max-w-3xl mx-auto leading-relaxed">
+                    <p className="text-lg md:text-2xl font-sans font-light text-white/50 max-w-3xl mx-auto leading-relaxed">
                         최고의 파트너들과 함께 만들어가는 새로운 아트 금융 생태계
                     </p>
                 </div>
             </section>
 
-            <div className="container mx-auto px-8 max-w-7xl py-24 space-y-40">
+            <div className="container mx-auto px-6 md:px-8 max-w-7xl py-16 md:py-24 space-y-20 md:space-y-40">
 
                 {/* Section 1: Strategic Partners */}
                 <section>

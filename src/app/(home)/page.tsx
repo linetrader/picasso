@@ -31,7 +31,7 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-[#020617] text-[#f8fafc] overflow-x-hidden selection:bg-[#d4af37] selection:text-[#020617]">
       {/* Hero Section with Canvas Background */}
-      <section className="relative pt-48 pb-32 flex items-center justify-center overflow-hidden">
+      <section className="relative pt-32 pb-20 md:pt-48 md:pb-32 flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
             src={getImageUrl("home", "why_picasso_bg.png")}
@@ -42,7 +42,7 @@ export default function Home() {
           <div className="absolute inset-0 bg-gradient-to-b from-[#020617] via-transparent to-[#020617]" />
         </div>
 
-        <div className="container mx-auto px-8 relative z-10 text-center">
+        <div className="container mx-auto px-6 md:px-8 relative z-10 text-center">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-[#d4af37]/10 border border-[#d4af37]/20 rounded-full mb-8">
             <span className="w-2 h-2 rounded-full bg-[#d4af37] animate-pulse" />
             <span className="text-[10px] font-black text-[#d4af37] tracking-[0.3em] uppercase">WHY : VISION</span>
@@ -57,10 +57,10 @@ export default function Home() {
             <p className="text-white/60 font-sans tracking-[0.3em] uppercase text-xs mb-4">
               Annual Transaction Volume
             </p>
-            <div className="text-6xl md:text-9xl font-black font-serif text-white tracking-tighter mb-4">
+            <div className="text-5xl md:text-9xl font-black font-serif text-white tracking-tighter mb-4">
               $<Counter target={500000000} duration={2000} />
             </div>
-            <p className="text-xl md:text-2xl font-sans font-light text-white/80 max-w-2xl">
+            <p className="text-lg md:text-2xl font-sans font-light text-white/80 max-w-2xl">
               시장이 증명하고 역사가 검증한 압도적 유동성, <br />
               이제 당신의 포트폴리오에 담을 시간입니다.
             </p>

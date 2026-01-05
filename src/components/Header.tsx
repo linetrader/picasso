@@ -17,13 +17,13 @@ const Header = () => {
     ];
 
     return (
-        <div className="navbar bg-[#020617]/80 backdrop-blur-md fixed top-0 z-50 px-8 border-b border-[#d4af37]/20">
+        <div className="navbar bg-[#020617]/80 backdrop-blur-md fixed top-0 z-50 px-4 lg:px-8 border-b border-[#d4af37]/20">
             <div className="navbar-start">
                 <div className="dropdown">
-                    <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden text-[#d4af37]">
+                    <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden text-[#d4af37] pl-0">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
-                            className="h-5 w-5"
+                            className="h-6 w-6"
                             fill="none"
                             viewBox="0 0 24 24"
                             stroke="currentColor">
@@ -43,6 +43,12 @@ const Header = () => {
                                 <li key={i}>
                                     <Link
                                         href={item.href}
+                                        onClick={() => {
+                                            const elem = document.activeElement as HTMLElement;
+                                            if (elem) {
+                                                elem.blur();
+                                            }
+                                        }}
                                         className={`flex items-center justify-between py-3 ${isActive ? 'text-[#d4af37] bg-[#d4af37]/10' : 'text-white hover:text-[#d4af37]'}`}
                                     >
                                         <span className="font-black text-[10px] tracking-widest text-[#d4af37]">{item.label}</span>
@@ -54,12 +60,12 @@ const Header = () => {
                     </ul>
                 </div>
                 <div className="flex items-center gap-3">
-                    <div className="w-60 h-[4.5rem] relative overflow-hidden">
+                    <div className="w-32 h-10 md:w-60 md:h-[4.5rem] relative overflow-hidden transition-all">
                         <Image
                             src={getImageUrl("logo", "logo.jpg")}
                             alt="Picasso Group Logo"
                             fill
-                            className="object-contain"
+                            className="object-contain object-left md:object-center"
                         />
                     </div>
                 </div>

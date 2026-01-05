@@ -132,24 +132,24 @@ export default function RoadmapPage() {
         <main className="min-h-screen bg-[#020617] text-[#f8fafc] overflow-x-hidden selection:bg-[#d4af37] selection:text-[#020617] font-sans">
 
             {/* Hero Section */}
-            <section className="relative pt-48 pb-32 flex items-center justify-center overflow-hidden border-b border-[#d4af37]/10">
+            <section className="relative pt-32 pb-20 md:pt-48 md:pb-32 flex items-center justify-center overflow-hidden border-b border-[#d4af37]/10">
                 <div className="absolute inset-0 z-0">
                     <div className="absolute inset-0 bg-[#0f172a] opacity-50" />
                     <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-[#d4af37]/5 to-transparent" />
                 </div>
 
-                <div className="container mx-auto px-8 relative z-10 text-center">
+                <div className="container mx-auto px-6 md:px-8 relative z-10 text-center">
                     <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-[#d4af37]/10 border border-[#d4af37]/20 rounded-full mb-8">
                         <span className="w-2 h-2 rounded-full bg-[#d4af37] animate-pulse" />
                         <span className="text-[10px] font-black text-[#d4af37] tracking-[0.3em] uppercase">WHEN : ROADMAP</span>
                     </div>
-                    <h1 className="text-4xl md:text-7xl font-black font-serif mb-6 leading-tight max-w-5xl mx-auto italic text-white/90">
+                    <h1 className="text-3xl md:text-7xl font-black font-serif mb-6 leading-tight max-w-5xl mx-auto italic text-white/90">
                         1 Year to Global Standard
                     </h1>
                     <h2 className="text-xl md:text-2xl font-bold font-sans text-[#d4af37] tracking-widest uppercase mb-12">
                         1년의 혁신, 피카소 RWA의 등극
                     </h2>
-                    <p className="text-xl md:text-2xl font-sans font-light text-white/60 max-w-3xl mx-auto leading-relaxed">
+                    <p className="text-lg md:text-2xl font-sans font-light text-white/60 max-w-3xl mx-auto leading-relaxed">
                         우리는 단 1년 안에 자산의 토큰화부터 글로벌 TOP 거래소 상장까지, <br className="hidden md:block" />
                         압도적인 속도로 예술 금융의 패러다임을 바꿉니다.
                     </p>
@@ -157,11 +157,11 @@ export default function RoadmapPage() {
             </section>
 
             {/* Vertical Timeline */}
-            <section className="py-40 bg-[#020617] relative">
+            <section className="py-20 md:py-40 bg-[#020617] relative">
                 {/* Center Line for Desktop */}
                 <div className="absolute left-8 md:left-1/2 top-40 bottom-40 w-px bg-gradient-to-b from-[#d4af37]/0 via-[#d4af37]/30 to-[#d4af37]/0" />
 
-                <div className="container mx-auto px-8 max-w-6xl">
+                <div className="container mx-auto px-6 md:px-8 max-w-6xl">
                     {milestones.map((m, i) => {
                         // eslint-disable-next-line react-hooks/rules-of-hooks
                         const [ref, isVisible] = useOnScreen({ threshold: 0.2 });

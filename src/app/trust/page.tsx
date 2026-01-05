@@ -6,7 +6,7 @@ export default function TrustSafetyPage() {
         <main className="min-h-screen bg-[#020617] text-[#f8fafc] overflow-x-hidden selection:bg-[#d4af37] selection:text-[#020617] font-sans">
 
             {/* Hero Section */}
-            <section className="relative pt-48 pb-32 flex items-center justify-center overflow-hidden border-b border-[#d4af37]/10">
+            <section className="relative pt-32 pb-20 md:pt-48 md:pb-32 flex items-center justify-center overflow-hidden border-b border-[#d4af37]/10">
                 <div className="absolute inset-0 z-0">
                     <Image
                         src={getImageUrl("trust", "trust_safety_bg.png")}
@@ -17,8 +17,8 @@ export default function TrustSafetyPage() {
                     <div className="absolute inset-0 bg-gradient-to-b from-[#020617] via-transparent to-[#020617]" />
                 </div>
 
-                <div className="container mx-auto px-8 relative z-10">
-                    <div className="flex flex-col lg:flex-row items-center gap-16">
+                <div className="container mx-auto px-6 md:px-8 relative z-10">
+                    <div className="flex flex-col lg:flex-row items-center gap-12 md:gap-16">
                         <div className="flex-1 text-center lg:text-left">
                             <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-[#d4af37]/10 border border-[#d4af37]/20 rounded-full mb-8">
                                 <span className="w-2 h-2 rounded-full bg-[#d4af37] animate-pulse" />
@@ -229,10 +229,10 @@ export default function TrustSafetyPage() {
             <section className="py-40 bg-[#020617] relative overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-r from-[#d4af37]/5 to-transparent" />
                 <div className="container mx-auto px-8 relative z-10">
-                    <div className="max-w-4xl border border-[#d4af37]/30 p-20 mx-auto text-center bg-[#0f172a]/40 backdrop-blur-xl">
+                    <div className="max-w-4xl border border-[#d4af37]/30 p-10 md:p-20 mx-auto text-center bg-[#0f172a]/40 backdrop-blur-xl">
                         <p className="text-xs font-black text-[#d4af37] tracking-[0.5em] uppercase mb-10 italic">Certified Integrity</p>
-                        <h2 className="text-4xl md:text-6xl font-black font-serif mb-12 italic leading-tight uppercase">Your Investment, <br /> Our Greatest Responsibility</h2>
-                        <button className="btn bg-[#d4af37] text-[#020617] border-none rounded-none px-16 h-20 text-xl font-black tracking-widest hover:scale-105 transition-all">
+                        <h2 className="text-3xl md:text-6xl font-black font-serif mb-12 italic leading-tight uppercase">Your Investment, <br /> Our Greatest Responsibility</h2>
+                        <button className="btn bg-[#d4af37] text-[#020617] border-none rounded-none px-8 md:px-16 h-20 text-xl font-black tracking-widest hover:scale-105 transition-all">
                             GET THE SAFETY REPORT
                         </button>
                     </div>

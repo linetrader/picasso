@@ -6,7 +6,7 @@ export default function BusinessPage() {
         <main className="min-h-screen bg-[#020617] text-[#f8fafc] overflow-x-hidden selection:bg-[#d4af37] selection:text-[#020617] font-sans">
 
             {/* Hero Section */}
-            <section className="relative pt-48 pb-32 flex items-center justify-center overflow-hidden border-b border-[#d4af37]/10">
+            <section className="relative pt-32 pb-20 md:pt-48 md:pb-32 flex items-center justify-center overflow-hidden border-b border-[#d4af37]/10">
                 <div className="absolute inset-0 z-0">
                     <Image
                         src={getImageUrl("business", "business_hero.png")}
@@ -17,7 +17,7 @@ export default function BusinessPage() {
                     <div className="absolute inset-0 bg-gradient-to-t from-[#020617] via-transparent to-[#020617]" />
                 </div>
 
-                <div className="container mx-auto px-8 relative z-10 text-center">
+                <div className="container mx-auto px-6 md:px-8 relative z-10 text-center">
                     <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-[#d4af37]/10 border border-[#d4af37]/20 rounded-full mb-8">
                         <span className="w-2 h-2 rounded-full bg-[#d4af37] animate-pulse" />
                         <span className="text-[10px] font-black text-[#d4af37] tracking-[0.3em] uppercase">HOW : BUSINESS</span>
@@ -28,7 +28,7 @@ export default function BusinessPage() {
                     <h2 className="text-xl md:text-2xl font-bold font-sans text-[#d4af37] tracking-widest uppercase mb-12">
                         상장과 매각의 투트랙 수익
                     </h2>
-                    <p className="text-xl md:text-2xl font-sans font-light text-white/70 max-w-3xl mx-auto mb-16">
+                    <p className="text-lg md:text-2xl font-sans font-light text-white/70 max-w-3xl mx-auto mb-16">
                         VARA 규제 하에 발행되는 첫 번째 하이엔드 아트 RWA 프로젝트에 참여하십시오.
                     </p>
 
@@ -56,9 +56,9 @@ export default function BusinessPage() {
             </section>
 
             {/* Business Steps */}
-            <section className="py-40 bg-[#020617]">
-                <div className="container mx-auto px-8 max-w-6xl">
-                    <div className="space-y-40">
+            <section className="py-16 md:py-40 bg-[#020617]">
+                <div className="container mx-auto px-6 md:px-8 max-w-6xl">
+                    <div className="space-y-20 md:space-y-40">
 
                         {/* Step 1: Asset Acquisition */}
                         <div className="flex flex-col lg:flex-row items-center gap-20">

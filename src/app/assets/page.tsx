@@ -8,13 +8,13 @@ export default function AssetsPage() {
         <main className="min-h-screen bg-[#020617] text-[#f8fafc] overflow-x-hidden selection:bg-[#d4af37] selection:text-[#020617] font-sans">
 
             {/* Hero Section */}
-            <section className="relative pt-48 pb-32 flex items-center justify-center overflow-hidden border-b border-[#d4af37]/10">
+            <section className="relative pt-32 pb-20 md:pt-48 md:pb-32 flex items-center justify-center overflow-hidden border-b border-[#d4af37]/10">
                 <div className="absolute inset-0 z-0">
                     <div className="absolute inset-0 bg-[#0f172a] opacity-50" />
                     <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-[#d4af37]/10 to-transparent blur-3xl opacity-50" />
                 </div>
 
-                <div className="container mx-auto px-8 relative z-10 text-center">
+                <div className="container mx-auto px-6 md:px-8 relative z-10 text-center">
                     <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-[#d4af37]/10 border border-[#d4af37]/20 rounded-full mb-8">
                         <span className="w-2 h-2 rounded-full bg-[#d4af37] animate-pulse" />
                         <span className="text-[10px] font-black text-[#d4af37] tracking-[0.3em] uppercase">WHAT : ASSETS</span>
@@ -29,8 +29,8 @@ export default function AssetsPage() {
             </section>
 
             {/* Section 1: Portfolio Overview */}
-            <section className="py-20 bg-[#020617]">
-                <div className="container mx-auto px-8">
+            <section className="py-16 md:py-20 bg-[#020617]">
+                <div className="container mx-auto px-6 md:px-8">
                     <div className="text-center mb-16">
                         <span className="text-[#d4af37] font-sans font-black tracking-widest text-sm uppercase block mb-4">Section 01 / Portfolio Overview</span>
                         <h3 className="text-3xl md:text-5xl font-serif font-black text-white italic leading-tight">

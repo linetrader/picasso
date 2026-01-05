@@ -7,12 +7,12 @@ import { getImageUrl } from "@/lib/images";
 const Footer = () => {
     return (
         <footer className="bg-[#020617] text-[#f8fafc] border-t border-[#d4af37]/20">
-            <div className="container mx-auto px-10 py-24">
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16">
+            <div className="container mx-auto px-6 py-12 md:px-10 md:py-24">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 md:gap-16">
                     {/* Brand Section */}
                     <div className="col-span-1 lg:col-span-1">
-                        <div className="flex items-center gap-3 mb-8">
-                            <div className="w-80 h-20 relative overflow-hidden">
+                        <div className="flex items-center gap-3 mb-6 md:mb-8">
+                            <div className="w-48 h-12 md:w-80 md:h-20 relative overflow-hidden transition-all">
                                 <Image
                                     src={getImageUrl("logo", "logo.jpg")}
                                     alt="Picasso Group Logo"
